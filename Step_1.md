@@ -85,7 +85,7 @@ Cycles per instruction (CPI)  | [system.cpu.cpi [stats.txt]](/Step1_files/specbz
 
 *[1](#80): Αναφερόμαστε στον χρόνο εκτέλεσης του Benchmark και όχι τον συνολικό χρόνο προσομοίωσης.*
 
-Δεδομένα/Benchmark  |  Χρόνος Εκτέλεσης | Cycles per instruction (CPI)  | Total misses L1 Data  | Total miss L1 instruction | Total miss rates L2
+Δεδομένα/Benchmark  |  Χρόνος Εκτέλεσης | Cycles per instruction (CPI)  | Total miss-rate L1 Data  | Total miss-rate L1 Instruction | Total miss-rate rates L2
 -------------------- | ---------------------- | -------------------------- | ------------------------- | -------------------------- | ----------------
 401.bzip2 *(specbzip)* |  0.084159	| 1.683172 |	0.014840 |	0.000074 |	0.281708
 470.lbm *(speclibm)*  | 0.174681 |	3.493611 |	0.060971 |	0.000099 |	0.999927
@@ -96,3 +96,19 @@ Cycles per instruction (CPI)  | [system.cpu.cpi [stats.txt]](/Step1_files/specbz
 - **Χρόνος Εκτέλεσης**
 
 ![Simulated Time Per Benchmark](/Step1_files/step1_q2_grafs/sim_seconds_graf.bmp "Simulated Time Per Benchmark")
+
+- **Cycles per instruction (CPI)**
+
+![Cycles per instruction (CPI)](/Step1_files/step1_q2_grafs/cpi_graf.bmp "Cycles per instruction (CPI)")
+
+- **Total miss-rate L1 Data**
+
+![Total misses L1 Data](/Step1_files/step1_q2_grafs/dcache_miss_rate_graf.bmp "Total misses L1 Data")
+
+- **Total miss-rate L1 Instruction**
+
+![Total misses L1 Data](/Step1_files/step1_q2_grafs/icache_miss_rate_graf.bmp "Total misses L1 Data")
+
+- **Total miss-rate L2 Cache**
+
+![Total miss-rate L2 Cache](/Step1_files/step1_q2_grafs/L2_cache_miss_rate_graf.bmp "Total miss-rate L2 Cache")
