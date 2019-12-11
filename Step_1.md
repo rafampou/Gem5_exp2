@@ -77,10 +77,10 @@ _Αναφορικά οι παραπομπές αφορούν το Benchmark Spec
 
 Πληροφορίες | Παραπομπή
 ------------------------  | ------------------------
-Χρόνος Εκτέλεσης [^1]  |  [sim_seconds [stats.txt]](/Step1_files/specbzip/stats.txt#L12)
+Χρόνος Εκτέλεσης [1](#86)  |  [sim_seconds [stats.txt]](/Step1_files/specbzip/stats.txt#L12)
 Cycles per instruction (CPI)  | [system.cpu.cpi [stats.txt]](/Step1_files/specbzip/stats.txt#L29)
 Συνολικά miss rates L1 Data cache | [system.cpu.dcache.overall_misses::.cpu.data [stats.txt]](/Step1_files/specbzip/stats.txt#L854)
 Συνολικά miss rates L1 instruction cache | [system.cpu.icache.overall_misses::total  [stats.txt]](/Step1_files/specbzip/stats.txt#L768)
 Συνολικά miss rates L2 cache | [system.l2.overall_misses::total  [stats.txt]](/Step1_files/specbzip/stats.txt#L302)
 
-[^1]: Αναφερόμαστε στον χρόνο εκτέλεσης του Benchmark και όχι τον συνολικό χρόνο προσομοίωσης.
+[1]: Αναφερόμαστε στον χρόνο εκτέλεσης του Benchmark και όχι τον συνολικό χρόνο προσομοίωσης.
