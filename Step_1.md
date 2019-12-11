@@ -92,3 +92,7 @@ Cycles per instruction (CPI)  | [system.cpu.cpi [stats.txt]](/Step1_files/specbz
 456.hmmer *(spechmmer)* | 0.059368 |	1.187362|	0.001645 |	0.000205 |	0.082246
 458.sjeng *(specsjeng)* | 0.513541 |	10.270810	| 0.121829 |	0.000020 |	0.999979
 429.mcf *(specmcf)* | 0.055477 |	1.109538 |	0.002051 |	0.000037 |	0.724040
+
+- **Χρόνος Εκτέλεσης**
+
+![Simulated Time Per Benchmark](/Step1_files/step1_q2_grafs/sim_seconds_graf.bmp "Simulated Time Per Benchmark")
