@@ -34,46 +34,53 @@ Cacheline size  | 64kB |  [cache_line_size=65536 - [config.ini]](/Step1_files/sp
 
 Μέγεθος | Τιμή | Αναφορά σε αρχείο
 ----------------- | ----- | ------------------
-L1 instruction cache | |
-L1 Data caches  | |
-L2 Data caches  | |
-Associativity L1 instruction cache  | |
-Associativity L1 data cache | |
-Associativity L2 data cache | |
-Cacheline size  | |
+L1 instruction cache | 32kB  |  [size=32768 - [config.ini]](/Step1_files/speclibm/config.ini#L813)
+L1 Data caches  | 64kB  | [size=65536 - [config.ini]](/Step1_files/speclibm/config.ini#L211)
+L2 cache  | 2MB | [size=2097152 - [config.ini]](/Step1_files/speclibm/config.ini#L1018)
+Associativity L1 instruction cache  | 2 | [assoc=2 - [config.ini]](/Step1_files/speclibm/config.ini#L793)
+Associativity L1 data cache | 2 | [assoc=2 - [config.ini]](/Step1_files/speclibm/config.ini#L159)
+Associativity L2 cache | 8 | [assoc=8 - [config.ini]](/Step1_files/speclibm/config.ini#L998)
+Cacheline size  | 64kB |  [cache_line_size=65536 - [config.ini]](/Step1_files/speclibm/config.ini#L15)
 
 - **Specmcf**
 
 Μέγεθος | Τιμή | Αναφορά σε αρχείο
 ----------------- | ----- | ------------------
-L1 instruction cache | |
-L1 Data caches  | |
-L2 Data caches  | |
-Associativity L1 instruction cache  | |
-Associativity L1 data cache | |
-Associativity L2 data cache | |
-Cacheline size  | |
+L1 instruction cache | 32kB  |  [size=32768 - [config.ini]](/Step1_files/specmcf/config.ini#L813)
+L1 Data caches  | 64kB  | [size=65536 - [config.ini]](/Step1_files/specmcf/config.ini#L211)
+L2 cache  | 2MB | [size=2097152 - [config.ini]](/Step1_files/specmcf/config.ini#L1018)
+Associativity L1 instruction cache  | 2 | [assoc=2 - [config.ini]](/Step1_files/specmcf/config.ini#L793)
+Associativity L1 data cache | 2 | [assoc=2 - [config.ini]](/Step1_files/specmcf/config.ini#L159)
+Associativity L2 cache | 8 | [assoc=8 - [config.ini]](/Step1_files/specmcf/config.ini#L998)
+Cacheline size  | 64kB |  [cache_line_size=65536 - [config.ini]](/Step1_files/specmcf/config.ini#L15)
 
 - **Specsjeng**
 
 Μέγεθος | Τιμή | Αναφορά σε αρχείο
 ----------------- | ----- | ------------------
-L1 instruction cache | |
-L1 Data caches  | |
-L2 Data caches  | |
-Associativity L1 instruction cache  | |
-Associativity L1 data cache | |
-Associativity L2 data cache | |
-Cacheline size  | |
+L1 instruction cache | 32kB  |  [size=32768 - [config.ini]](/Step1_files/specsjeng/config.ini#L813)
+L1 Data caches  | 64kB  | [size=65536 - [config.ini]](/Step1_files/specsjeng/config.ini#L211)
+L2 cache  | 2MB | [size=2097152 - [config.ini]](/Step1_files/specsjeng/config.ini#L1018)
+Associativity L1 instruction cache  | 2 | [assoc=2 - [config.ini]](/Step1_files/specsjeng/config.ini#L793)
+Associativity L1 data cache | 2 | [assoc=2 - [config.ini]](/Step1_files/specsjeng/config.ini#L159)
+Associativity L2 cache | 8 | [assoc=8 - [config.ini]](/Step1_files/specsjeng/config.ini#L998)
+Cacheline size  | 64kB |  [cache_line_size=65536 - [config.ini]](/Step1_files/specsjeng/config.ini#L15)
 
-- **Specbzip**
+**Είναι φανερό ότι τα μεγέθη αυτά παρεμένουν σταθερά σε όλα τα Benchmarks καθώς δεν αλλάζουμε τα ορίσματα του script *se.py*.**
 
-Μέγεθος | Τιμή | Αναφορά σε αρχείο
------------------ | ----- | ------------------
-L1 instruction cache | |
-L1 Data caches  | |
-L2 Data caches  | |
-Associativity L1 instruction cache  | |
-Associativity L1 data cache | |
-Associativity L2 data cache | |
-Cacheline size  | |
+## Ερώτημα 2ο
+Το δεύτερο ερώτημα μας ζητάει να κρατήσουε τις ακόλουθες πληροφορίες από τα στατιστικά για κάθε Benchmark που προσομοιώσαμε.
+
+Τα δεδομένα θα τα αντλήσουμε από το αρχείο [stats.txt](/Step1_files/specbzip/stats.txt).
+
+_Αναφορικά οι παραπομπές αφορούν το Benchmark Specbzip._
+
+Πληροφορίες | Παραπομπή
+------------------------  | ------------------------
+Χρόνος Εκτέλεσης [^1]  |  [sim_seconds [stats.txt]](/Step1_files/specbzip/stats.txt#L12)
+Cycles per instruction (CPI)  | [system.cpu.cpi [stats.txt]](/Step1_files/specbzip/stats.txt#L29)
+Συνολικά miss rates L1 Data cache | [system.cpu.dcache.overall_misses::.cpu.data [stats.txt]](/Step1_files/specbzip/stats.txt#L854)
+Συνολικά miss rates L1 instruction cache | [system.cpu.icache.overall_misses::total  [stats.txt]](/Step1_files/specbzip/stats.txt#L768)
+Συνολικά miss rates L2 cache | [system.l2.overall_misses::total  [stats.txt]](/Step1_files/specbzip/stats.txt#L302)
+
+[^1]: Αναφερόμαστε στον χρόνο εκτέλεσης του Benchmark και όχι τον συνολικό χρόνο προσομοίωσης.
