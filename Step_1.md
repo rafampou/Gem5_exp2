@@ -6,7 +6,20 @@
 
 Στο πρώτο ερώτημα μας ζητάει να εντοπίσουμε στα αρχεία εξόδου των προσομοιώσεών τα μεγέθη των caches, το associativity κάθε μίας από αυτές και το μέγεθος της cache line.
 
-- Specbzip
+- **Specbzip**
+
+Μέγεθος | Τιμή | Αναφορά σε αρχείο
+----------------- | ----- | ------------------
+L1 instruction cache |    |
+L1 Data caches  | |
+L2 Data caches  | |
+Associativity L1 instruction cache  | |
+Associativity L1 data cache | |
+Associativity L2 data cache | |
+Cacheline size  | 64kB |  [cache_line_size - [config.ini]](/Step1_files/specbzip/config.ini#L15)
+
+- **Spechmmer**
+
 Μέγεθος | Τιμή | Αναφορά σε αρχείο
 ----------------- | ----- | ------------------
 L1 instruction cache | |
@@ -17,7 +30,8 @@ Associativity L1 data cache | |
 Associativity L2 data cache | |
 Cacheline size  | |
 
-- Spechmmer
+- **Speclibm**
+
 Μέγεθος | Τιμή | Αναφορά σε αρχείο
 ----------------- | ----- | ------------------
 L1 instruction cache | |
@@ -28,7 +42,8 @@ Associativity L1 data cache | |
 Associativity L2 data cache | |
 Cacheline size  | |
 
-- Speclibm
+- **Specmcf**
+
 Μέγεθος | Τιμή | Αναφορά σε αρχείο
 ----------------- | ----- | ------------------
 L1 instruction cache | |
@@ -39,7 +54,8 @@ Associativity L1 data cache | |
 Associativity L2 data cache | |
 Cacheline size  | |
 
-- Specmcf
+- **Specsjeng**
+
 Μέγεθος | Τιμή | Αναφορά σε αρχείο
 ----------------- | ----- | ------------------
 L1 instruction cache | |
@@ -50,18 +66,8 @@ Associativity L1 data cache | |
 Associativity L2 data cache | |
 Cacheline size  | |
 
-- Specsjeng
-Μέγεθος | Τιμή | Αναφορά σε αρχείο
------------------ | ----- | ------------------
-L1 instruction cache | |
-L1 Data caches  | |
-L2 Data caches  | |
-Associativity L1 instruction cache  | |
-Associativity L1 data cache | |
-Associativity L2 data cache | |
-Cacheline size  | |
+- **Specbzip**
 
-- Specbzip
 Μέγεθος | Τιμή | Αναφορά σε αρχείο
 ----------------- | ----- | ------------------
 L1 instruction cache | |
