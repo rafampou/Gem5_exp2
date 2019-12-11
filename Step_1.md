@@ -10,13 +10,13 @@
 
 Μέγεθος | Τιμή | Αναφορά σε αρχείο
 ----------------- | ----- | ------------------
-L1 instruction cache |    |
-L1 Data caches  | |
-L2 Data caches  | |
-Associativity L1 instruction cache  | |
-Associativity L1 data cache | |
-Associativity L2 data cache | |
-Cacheline size  | 64kB |  [cache_line_size - [config.ini]](/Step1_files/specbzip/config.ini#L15)
+L1 instruction cache | 32kB  |  [size=32768 - [config.ini]](/Step1_files/specbzip/config.ini#L845)
+L1 Data caches  | 64kB  | [size=65536 - [config.ini]](/Step1_files/specbzip/config.ini#L179)
+L2 Data caches  | 2MB | [size=2097152 - [config.ini]](/Step1_files/specbzip/config.ini#L1050)
+Associativity L1 instruction cache  | 2 | [assoc=2 - [config.ini]](/Step1_files/specbzip/config.ini#L832)
+Associativity L1 data cache | 2 | [assoc=2 - [config.ini]](/Step1_files/specbzip/config.ini#L159)
+Associativity L2 data cache | 2 | [assoc=8 - [config.ini]](/Step1_files/specbzip/config.ini#L1037)
+Cacheline size  | 64kB |  [cache_line_size=65536 - [config.ini]](/Step1_files/specbzip/config.ini#L15)
 
 - **Spechmmer**
 
