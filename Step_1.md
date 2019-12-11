@@ -15,5 +15,4 @@ L2 Data caches  | |
 Associativity L1 instruction cache  | |
 Associativity L1 data cache | |
 Associativity L2 data cache | |
-cacheline size  | |
 Cacheline size  | |
