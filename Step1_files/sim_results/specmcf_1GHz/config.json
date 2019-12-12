@@ -59,7 +59,7 @@
                 "app_path": "/proc", 
                 "name": "redirect_paths0", 
                 "host_paths": [
-                    "spec_results/speclibm_2GHz/fs/proc"
+                    "spec_results/specmcf_1GHz/fs/proc"
                 ], 
                 "eventq_index": 0, 
                 "cxx_class": "RedirectPath", 
@@ -70,7 +70,7 @@
                 "app_path": "/sys", 
                 "name": "redirect_paths1", 
                 "host_paths": [
-                    "spec_results/speclibm_2GHz/fs/sys"
+                    "spec_results/specmcf_1GHz/fs/sys"
                 ], 
                 "eventq_index": 0, 
                 "cxx_class": "RedirectPath", 
@@ -81,7 +81,7 @@
                 "app_path": "/tmp", 
                 "name": "redirect_paths2", 
                 "host_paths": [
-                    "spec_results/speclibm_2GHz/fs/tmp"
+                    "spec_results/specmcf_1GHz/fs/tmp"
                 ], 
                 "eventq_index": 0, 
                 "cxx_class": "RedirectPath", 
@@ -1245,7 +1245,7 @@
                         "pid": 100, 
                         "kvmInSE": false, 
                         "cxx_class": "Process", 
-                        "executable": "spec_cpu2006/470.lbm/src/speclibm", 
+                        "executable": "spec_cpu2006/429.mcf/src/specmcf", 
                         "drivers": [], 
                         "system": "system", 
                         "gid": 100, 
@@ -1262,12 +1262,8 @@
                         "path": "system.cpu.workload", 
                         "name": "workload", 
                         "cmd": [
-                            "spec_cpu2006/470.lbm/src/speclibm", 
-                            "20", 
-                            "spec_cpu2006/470.lbm/data/lbm.in", 
-                            "0", 
-                            "1", 
-                            "spec_cpu2006/470.lbm/data/100_100_130_cf_a.of"
+                            "spec_cpu2006/429.mcf/src/specmcf", 
+                            "spec_cpu2006/429.mcf/data/inp.in"
                         ], 
                         "errout": "cerr", 
                         "useArchPT": false, 
